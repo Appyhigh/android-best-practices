@@ -197,7 +197,7 @@ To intercept any request, we mostly use a proxy tool. The proxy tool installs it
 <br/>With SSL Pinning implementation, the application does not trust custom certificates and does not allow proxy tools to intercept the traffic.
 <br/>It’s a method that depends on server certificate verification on the client-side. Read more [here](https://www.nowsecure.com/blog/2017/06/15/certificate-pinning-for-android-and-ios-mobile-man-in-the-middle-attack-prevention/).
 
-17) Use [SafetyNet Attestation API](https://developer.android.com/training/safetynet/attestation) to help determine whether your servers are interacting with your genuine app running on a genuine Android device.<br/><br/>
+17) Use [SPlay Integrity API](https://developer.android.com/training/safetynet/attestation) to help determine whether your servers are interacting with your genuine app running on a genuine Android device.<br/><br/>
 The API verifies the following:
 1) Whether the device is rooted or not.<br/>
 2) Whether the device is monitored.<br/>
