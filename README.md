@@ -211,7 +211,7 @@ But before implementing it, please check the [Dos and Don’ts](https://develope
 19) Use the [Android Keystore system](https://medium.com/@josiassena/using-the-android-keystore-system-to-store-sensitive-information-3a56175a454b) to store and retrieve sensitive information from your storage like databases etc.<br/><br/>
 
 The [Android keystore](https://developer.android.com/training/articles/keystore.html) provides a secure system level credential storage. With the keystore, an app can create a new Private/Public key pair, and use this to encrypt application secrets before saving it in the private storage folders.
-While developing AarogyaSetu, I learnt about using Keystore for encrypting and decrypting highly sensitive information. You can check the implementation [here](https://github.com/nic-delhi/AarogyaSetu_Android).<br/>
+You can check the implementation [here](https://github.com/nic-delhi/AarogyaSetu_Android).<br/>
 
 >Note: We have an [Android Backup](https://developer.android.com/guide/topics/data/autobackup) mechanism which is turned on by default. Android preserves app data by uploading it to the user’s Google Drive — where it’s protected by the user’s Google Account credentials and can be easily downloaded for the same credentials on other devices.
 >But, When you have encrypted something with Android Keystore, you won’t be able to restore it because the cypher key is only for that specific device. We don’t have a sync mechanism for Keystore like iOS and their keychain. A better way to backup your users’ data is to store them on your backend.
@@ -319,6 +319,4 @@ This will make navigating for layout files a lot easier and keep resources segre
 When you’re reviewing code of your teammates don’t be a friend, Be their arch enemy, don’t let them make mistakes that you might have to clean someday. Cleaning other’s shit will only make your hand dirty. Enforce good practices in code reviews.
 
 Please feel free to contribute by raising a [PR](https://github.com/niharika2810/android-development-best-practices/compare) to add more. I will be happy to learn and share :-)
-
-You can check the article [here](https://proandroiddev.com/android-development-best-practices-7278e9cdbbe9) which is originally published here on my [personal website](https://thedroidlady.com/2020-07-23-android-development-best-practices).
 
